@@ -66,9 +66,11 @@ body {
 .container {
     display: flex;
     justify-content: center;
+    margin-top:auto
     align-items: center;
     height: 100vh;
     text-align: center;
+ 
 }
 
 .content {
@@ -141,3 +143,4 @@ body.light-mode .social-icons .icon {
     body.light-mode .social-icons .icon:hover {
         color: #238636; /* GitHub Green */
     }
+

@@ -6,16 +6,17 @@
     <title>Dendo Pulgo - Landing Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <link rel="stylesheet" href="site.css">
 </head>
 <body>
 
 
 
-    <div class="container">
+    <div  class="container mt-5">
         <div class="content">
             <h1>Dendo Pulgo</h1>
-            <p>Welcome to my personal space. I’m passionate about [your profession/interest]. Let’s create something amazing together.</p>
+            <p>Welcome to my personal space. I’m passionate about Web/Software Developer. Let’s create something amazing together.</p>
             <a href="#contact" class="btn">Get in Touch</a>
             <div class="social-icons">
                 <a href="https://github.com" target="_blank" class="icon"><i class="fab fa-github"></i></a>
@@ -24,5 +25,117 @@
             </div>
         </div>
     </div>
+    <!-- Card Grid -->
+    <div class="container-sm mt-5">
+        <h2 class="text-center mb-4">My Projects</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Description of Project 1. This is a brief overview of what the project does.</p>
+                        <a href="#modal1" class="btn btn-primary" data-bs-toggle="modal">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Description of Project 2. This is a brief overview of what the project does.</p>
+                        <a href="#modal2" class="btn btn-primary" data-bs-toggle="modal">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Description of Project 3. This is a brief overview of what the project does.</p>
+                        <a href="#modal3" class="btn btn-primary" data-bs-toggle="modal">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 4</h5>
+                        <p class="card-text">Description of Project 4. This is a brief overview of what the project does.</p>
+                        <a href="#modal4" class="btn btn-primary" data-bs-toggle="modal">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Project 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400" class="img-fluid rounded" alt="Project 1">
+                    <p class="mt-3">Detailed description of Project 1. This is a more in-depth explanation of what the project does and the technologies used.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Project 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400" class="img-fluid rounded" alt="Project 2">
+                    <p class="mt-3">Detailed description of Project 2. This is a more in-depth explanation of what the project does and the technologies used.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">Project 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400" class="img-fluid rounded" alt="Project 3">
+                    <p class="mt-3">Detailed description of Project 3. This is a more in-depth explanation of what the project does and the technologies used.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal4Label">Project 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400" class="img-fluid rounded" alt="Project 4">
+                    <p class="mt-3">Detailed description of Project 4. This is a more in-depth explanation of what the project does and the technologies used.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
 </body>
 </html>
