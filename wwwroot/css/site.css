@@ -20,3 +20,117 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    /* Dark Mode Styles */
+    body.dark-mode {
+        background-color: #1a1a1a;
+        color: #f4f4f4;
+    }
+
+        body.dark-mode .btn {
+            background-color: #0056b3;
+        }
+
+            body.dark-mode .btn:hover {
+                background-color: #007BFF;
+            }
+
+.theme-toggle {
+    position: fixed;
+    top: 13spx;
+    right: 20px;
+}
+
+#theme-btn {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    #theme-btn:hover {
+        background-color: #0056b3;
+    }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 5%;
+}
+
+.left-side {
+    max-width: 50%;
+}
+
+    .left-side h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .left-side p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+.right-side {
+    max-width: 50%;
+}
+
+    .right-side img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .left-side, .right-side {
+        max-width: 100%;
+    }
+
+        .right-side img {
+            margin-top: 20px;
+        }
+}
