@@ -11,16 +11,16 @@ if (savedTheme) {
 
 // Toggle Dark/Light Mode
 themeBtn.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark-mode' : '');
+    body.classList.toggle('light-mode');
+    localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light-mode' : '');
     updateButtonText();
 });
 
 // Update button text based on current theme
 function updateButtonText() {
-    if (body.classList.contains('dark-mode')) {
-        themeBtn.textContent = '☀️ Light Mode';
-    } else {
+    if (body.classList.contains('light-mode')) {
         themeBtn.textContent = '🌙 Dark Mode';
+    } else {
+        themeBtn.textContent = '☀️ Light Mode';
     }
 }
