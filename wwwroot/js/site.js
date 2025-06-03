@@ -19,9 +19,9 @@ themeBtn.addEventListener('click', () => {
 // Update button text based on current theme
 function updateButtonText() {
     if (body.classList.contains('light-mode')) {
-        themeBtn.textContent = '🌙 Dark Mode';
+        themeBtn.textContent = '🌙';
     } else {
-        themeBtn.textContent = '☀️ Light Mode';
+        themeBtn.textContent = '☀️';
     }
 }
 

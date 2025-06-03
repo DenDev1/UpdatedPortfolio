@@ -2,8 +2,9 @@
 
 namespace Portfolio.Controllers
 {
-    public class Portfolio : Controller
+    public class PortfolioController : Controller
     {
+    
         public IActionResult Index()
         {
             return View();
